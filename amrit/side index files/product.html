@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+<body>
+    <div class="top">
+        <div class="logo">
+          <a href="/index.html">  <img src="/AMRIT_logo-removebg.png" alt="" class="piclogo"></a>
+        </div>
+        <div class="middle">
+            <nav>
+                <ul>
+                    <a href="/index.html"><li>HOME</li></a>
+                    <a href="#"><li>ABOUT</li></a>
+                    <a href="#"><li>CONTACT</li></a>
+                    <a href="#"><li>FAQ</li></a>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <button class="btn">Sign-In</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="side" id="side-id">
+            <i class="las la-arrow-circle-left" id="ham" onclick="ham_function()"></i>
+            <!-- <i class="las la-bars" id="ham" onclick="ham_function()"></i> -->
+           <div class="mobile side_bar">
+            <div class="heading_side_bar" onclick="hidefunction1()">Mobile<i class="las la-chevron-circle-down"></i></div>
+            <ul id="hide_menu1">
+                <li>i-phone</li>
+                <li>samgsung</li>
+                <li>Redmi</li>
+                <li>infinix</li>
+                <li>poco</li>
+            </ul>
+           </div>
+           <div class="laptop side_bar">
+            <div class="heading_side_bar" onclick="hidefunction2()">Laptop<i class="las la-chevron-circle-down"></i></div>
+            <ul id="hide_menu2">
+                <li>HP</li>
+                <li>Dell</li>
+                <li>Acer</li>
+                <li>Mac</li>
+                <li>Toshiba</li>
+            </ul>
+           </div>
+           <div class="tv side_bar">
+            <div class="heading_side_bar" onclick="hidefunction3()">TV<i class="las la-chevron-circle-down"></i></div>
+            <ul id="hide_menu3">
+                <li>Sky Worth</li>
+                <li>samgsung</li>
+                <li>LG</li>
+                <li>CG</li>
+                <li>Apple</li>
+            </ul>
+           </div>
+        </div>
+        <div class="main_body" id="main">
+            <i class="las la-bars las1" id="ham1" onclick="ham_function()"></i>
+          <div class="search_heading">
+        
+           <a href="/index.html"> <img src="/logo1.jpg" alt="" class="buy_logo"></a>
+            <input type="text" name="" id="search" placeholder="search">
+            <i class="las la-search"></i>
+            <i class="las la-comment"></i>
+            <i class="lab la-facebook-messenger"></i>
+            <i class="lab la-instagram"></i>
+            <i class="lab la-twitter"></i>
+            <i class="lab la-facebook"></i>
+          </div>  
+          <div class="photo_col">
+           <div class="image-div"> <img src="/8k image.jpg" alt="" class="images"><div class="button_div"> <button class="btn_buy">Buy</button><button class="btn_buy">Add Cart</button></div></div>
+           <div class="image-div"> <img src="/8k image.jpg" alt="" class="images"><div class="button_div"> <button class="btn_buy">Buy</button><button class="btn_buy">Add Cart</button></div></div>
+           <div class="image-div"> <img src="/8k image.jpg" alt="" class="images"><div class="button_div"> <button class="btn_buy">Buy</button><button class="btn_buy">Add Cart</button></div></div>
+           <div class="image-div"> <img src="/8k image.jpg" alt="" class="images"><div class="button_div"> <button class="btn_buy">Buy</button><button class="btn_buy">Add Cart</button></div></div>
+           <div class="image-div"> <img src="/8k image.jpg" alt="" class="images"><div class="button_div"> <button class="btn_buy">Buy</button><button class="btn_buy">Add Cart</button></div></div>
+           <div class="image-div"> <img src="/8k image.jpg" alt="" class="images"><div class="button_div"> <button class="btn_buy">Buy</button><button class="btn_buy">Add Cart</button></div></div>
+           <div class="image-div"> <img src="/8k image.jpg" alt="" class="images"><div class="button_div"> <button class="btn_buy">Buy</button><button class="btn_buy">Add Cart</button></div></div>
+           <div class="image-div"> <img src="/8k image.jpg" alt="" class="images"><div class="button_div"> <button class="btn_buy">Buy</button><button class="btn_buy">Add Cart</button></div></div>
+          </div>
+        </div>
+    </div>
+    <script>
+      let  hide1=document.getElementById('hide_menu1');
+      let  hide2=document.getElementById('hide_menu2');
+      let  hide3=document.getElementById('hide_menu3');
+      let hamid=document.getElementById('ham');
+      let side_bar_id=document.getElementById('side-id');
+        function hidefunction1(){
+            if(hide1.style.display==="block")
+            {
+                hide1.style.display="none";
+            }
+            else
+            {
+                hide1.style.display="block";
+            }
+        }
+        function hidefunction2(){
+            if(hide2.style.display==="block")
+            {
+                hide2.style.display="none";
+            }
+            else
+            {
+                hide2.style.display="block";
+            }
+        }
+        function hidefunction3(){
+            if(hide3.style.display==="block")
+            {
+                hide3.style.display="none";
+            }
+            else
+            {
+                hide3.style.display="block";
+            }
+        }
+        function ham_function()
+        {
+            if(side_bar_id.style.display==="block")
+            {
+                side_bar_id.style.display="none";
+                document.getElementById('main').style.width="100%";
+                document.getElementById('ham1').style.visibility="visible";
+            }
+            else
+            {
+                side_bar_id.style.display="block";
+                document.getElementById('ham1').style.visibility="hidden";
+            }
+        }
+    </script>
+</body>
+</html>

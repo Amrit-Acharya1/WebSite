@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+<body>
+    <div class="top">
+        <div class="logo">
+          <a href="/index.html">  <img src="images/AMRIT_logo-removebg.png" alt="" class="piclogo"></a>
+        </div>
+        <div class="middle">
+            <nav>
+                <ul>
+                    <a href="/index.html"><li>HOME</li></a>
+                    <a href="#"><li>ABOUT</li></a>
+                    <a href="#"><li>CONTACT</li></a>
+                    <a href="#"><li>FAQ</li></a>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+          <a href="/sign-in function/index.html">  <button class="btn">Sign-In</button></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="side" id="side-id">
+            <i class="las la-arrow-circle-left" id="ham" onclick="ham_function()"></i>
+            <!-- <i class="las la-bars" id="ham" onclick="ham_function()"></i> -->
+           <div class="mobile side_bar">
+            <div class="heading_side_bar" onclick="hidefunction1()">Mobile<i class="las la-chevron-circle-down"></i></div>
+            <ul id="hide_menu1">
+                <li class="product1">i-phone</li>
+                <li class="product2">samgsung</li>
+                <li class="product3">Redmi</li>
+                <li class="product4">infinix</li>
+                <li class="product5">poco</li>
+            </ul>
+           </div>
+           <div class="laptop side_bar">
+            <div class="heading_side_bar" onclick="hidefunction2()">Laptop<i class="las la-chevron-circle-down"></i></div>
+            <ul id="hide_menu2">
+                <li class="product6">HP</li>
+                <li class="product7">Dell</li>
+                <li class="product8">Acer</li>
+                <li class="product9">Mac</li>
+                <li class="product10">Toshiba</li>
+            </ul>
+           </div>
+           <div class="tv side_bar">
+            <div class="heading_side_bar" onclick="hidefunction3()">TV<i class="las la-chevron-circle-down"></i></div>
+            <ul id="hide_menu3">
+                <li class="product11">Sky Worth</li>
+                <li class="product12">samgsung</li>
+                <li class="product13">LG</li>
+                <li class="product14">CG</li>
+                <li class="product15">Apple</li>
+            </ul>
+           </div>
+        </div>
+        <div class="main_body" id="main">
+            <i class="las la-bars las1" id="ham1" onclick="ham_function()"></i>
+          <div class="search_heading">
+        
+           <a href="/index.html"> <img src="images/logo1.jpg" alt="" class="buy_logo"></a>
+            <input type="text" name="" id="search" placeholder="search">
+            <i class="las la-search"></i>
+            <i class="las la-comment"></i>
+            <i class="lab la-facebook-messenger"></i>
+            <i class="lab la-instagram"></i>
+            <i class="lab la-twitter"></i>
+            <i class="lab la-facebook"></i>
+          </div>  
+          <div class="photo_col">
+           <div class="image-div"> <img src="images/8k image.jpg" alt="" class="images"><div class="button_div"> <button class="btn_buy">Buy</button><button class="btn_buy">Add Cart</button></div></div>
+           <div class="image-div"> <img src="images/8k image.jpg" alt="" class="images"><div class="button_div"> <button class="btn_buy">Buy</button><button class="btn_buy">Add Cart</button></div></div>
+           <div class="image-div"> <img src="images/8k image.jpg" alt="" class="images"><div class="button_div"> <button class="btn_buy">Buy</button><button class="btn_buy">Add Cart</button></div></div>
+           <div class="image-div"> <img src="images/8k image.jpg" alt="" class="images"><div class="button_div"> <button class="btn_buy">Buy</button><button class="btn_buy">Add Cart</button></div></div>
+           <div class="image-div"> <img src="images/8k image.jpg" alt="" class="images"><div class="button_div"> <button class="btn_buy">Buy</button><button class="btn_buy">Add Cart</button></div></div>
+           <div class="image-div"> <img src="images/8k image.jpg" alt="" class="images"><div class="button_div"> <button class="btn_buy">Buy</button><button class="btn_buy">Add Cart</button></div></div>
+           <div class="image-div"> <img src="images/8k image.jpg" alt="" class="images"><div class="button_div"> <button class="btn_buy">Buy</button><button class="btn_buy">Add Cart</button></div></div>
+           <div class="image-div"> <img src="images/8k image.jpg" alt="" class="images"><div class="button_div"> <button class="btn_buy">Buy</button><button class="btn_buy">Add Cart</button></div></div>
+          </div>
+        </div>
+    </div>
+    <script>
+        
+      let  hide1=document.getElementById('hide_menu1');
+      let  hide2=document.getElementById('hide_menu2');
+      let  hide3=document.getElementById('hide_menu3');
+      let hamid=document.getElementById('ham');
+      let side_bar_id=document.getElementById('side-id');
+        function hidefunction1(){
+            if(hide1.style.display==="block")
+            {
+                hide1.style.display="none";
+            }
+            else
+            {
+                hide1.style.display="block";
+            }
+        }
+        function hidefunction2(){
+            if(hide2.style.display==="block")
+            {
+                hide2.style.display="none";
+            }
+            else
+            {
+                hide2.style.display="block";
+            }
+        }
+        function hidefunction3(){
+            if(hide3.style.display==="block")
+            {
+                hide3.style.display="none";
+            }
+            else
+            {
+                hide3.style.display="block";
+            }
+        }
+        function ham_function()
+        {
+            if(side_bar_id.style.display==="block")
+            {
+                side_bar_id.style.display="none";
+                document.getElementById('main').style.width="100%";
+                document.getElementById('ham1').style.visibility="visible";
+            }
+            else
+            {
+                side_bar_id.style.display="block";
+                document.getElementById('ham1').style.visibility="hidden";
+            }
+        }
+        const touch1=document.querySelector('.product1');
+            const touch2=document.querySelector('.product2');
+            const touch3=document.querySelector('.product3');
+            const touch4=document.querySelector('.product4');
+            const touch5=document.querySelector('.product5');
+            const touch6=document.querySelector('.product6');
+            const touch7=document.querySelector('.product7');
+            const touch8=document.querySelector('.product8');
+            const touch9=document.querySelector('.product9');
+            const touch10=document.querySelector('.product10');
+            const touch11=document.querySelector('.product11');
+            const touch12=document.querySelector('.product12');
+            const touch13=document.querySelector('.product13');
+            const touch14=document.querySelector('.product14');
+            const touch15=document.querySelector('.product15');
+            const photo_column= document.querySelector('.photo_col')
+            touch1.addEventListener('click' ,() =>
+            {
+               photo_column.innerHTML='This iphone sucks';   
+            })
+            touch2.addEventListener('click' ,() =>
+            {
+               photo_column.innerHTML='This samgsung sucks';   
+            })
+            touch3.addEventListener('click' ,() =>
+            {
+               photo_column.innerHTML='This Redmi sucks';   
+            })
+            touch4.addEventListener('click' ,() =>
+            {
+               photo_column.innerHTML='This infinix sucks';   
+            })
+            touch5.addEventListener('click' ,() =>
+            {
+               photo_column.innerHTML='This poco sucks';   
+            })
+            touch6.addEventListener('click' ,() =>
+            {
+               photo_column.innerHTML='HP laptops are the Kings';   
+            })
+            touch7.addEventListener('click' ,() =>
+            {
+               photo_column.innerHTML='This Dell laptop sucks';   
+            })
+            touch8.addEventListener('click' ,() =>
+            {
+               photo_column.innerHTML='This Acer laptop sucks';   
+            })
+            touch9.addEventListener('click' ,() =>
+            {
+               photo_column.innerHTML='This MAC Book is the biggest sucker';   
+            })
+            touch10.addEventListener('click' ,() =>
+            {
+               photo_column.innerHTML='This Toshiba sucks';   
+            })
+            touch11.addEventListener('click' ,() =>
+            {
+               photo_column.innerHTML='Skyworth TV is somehow best';   
+            })
+            touch12.addEventListener('click' ,() =>
+            {
+               photo_column.innerHTML='This samgsung tv sucks';   
+            })
+            touch13.addEventListener('click' ,() =>
+            {
+               photo_column.innerHTML='This LG tv sucks';   
+            })
+            touch14.addEventListener('click' ,() =>
+            {
+               photo_column.innerHTML='This CG tv sucks';   
+            })
+            touch15.addEventListener('click' ,() =>
+            {
+               photo_column.innerHTML='This Apple Tv sucks';   
+            })
+    </script>
+</body>
+</html>
